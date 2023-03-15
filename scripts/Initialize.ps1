@@ -39,6 +39,7 @@ function Register-NuGet() {
       "PowershellGet"     = "3.0.19-beta19"
       "posh-git"          = "1.1.0"
       "powershell-yaml"   = "0.4.7"
+      "1Pwd"              = "1.0.0"
   };
 
   [string]$version = "0.9.1"
