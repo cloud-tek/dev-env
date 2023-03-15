@@ -6,15 +6,14 @@ This repository was created using [cloud-tek/ops-repo-template](https://github.c
 sequenceDiagram
     participant profile.ps1
     participant github
-    profile.ps1-->>github: check for updated manifest.json
-    github->>profile.ps1: download manifest.json
-    profile.ps1-->>github: check for updated scripts/*
-    github->>profile.ps1: download scripts/*
-    profile.ps1-->>github: check for updated config/*
-    github->>profile.ps1: download config/*
-    profile.ps1->>profile.ps1: ~/.cloud-tek/Initialize.ps1
-
-    profile.ps1->>profile.ps1: Initialize ~/.cloud-tek/*.env
+    profile.ps1->>github: check for updated manifest.json
+    github-->>profile.ps1: download manifest.json
+    profile.ps1->>github: check for updated scripts/*
+    github-->>profile.ps1: download scripts/*
+    profile.ps1->>github: check for updated config/*
+    github-->>profile.ps1: download config/*
+    profile.ps1->>profile.ps1: Run ~/.cloud-tek/Initialize.ps1
+    profile.ps1->>profile.ps1: Load ~/.cloud-tek/*.env
 ```
 
 ## Usage (MacOS / Linux)
