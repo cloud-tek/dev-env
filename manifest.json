@@ -1,0 +1,8 @@
+{
+    "scripts": [
+        { "file": "Initialize.ps1", "autoUpdate": true }
+    ],
+    "config": [
+        { "file": "cloud-tek.env", "autoUpdate": true }
+    ]
+}
