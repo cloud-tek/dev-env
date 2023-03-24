@@ -42,7 +42,7 @@ function Register-NuGet() {
       "1Pwd"              = "1.0.0"
   };
 
-  [string]$version = "0.9.3"
+  [string]$version = "0.10.0"
   [hashtable]$packages = @{
     "CloudTek.Automation.Shell"     = $version
     "CloudTek.Automation.K8S"       = $version
